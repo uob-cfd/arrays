@@ -22,8 +22,8 @@ test = {
         },
         {
           'code': r"""
-          >>> all(collection_times == np.arange(0, 31*24*60*60, 60*60))
-          True
+          >>> np.bool(all(collection_times == np.arange(0, 31*24*60*60, 60*60)))
+          np.True_
           """,
           'hidden': False,
           'locked': False
