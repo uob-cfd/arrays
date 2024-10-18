@@ -22,8 +22,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.bool(all(multiples_of_99 == np.arange(0, 9999+99, 99)))
-          np.True_
+          >>> assert np.bool(all(multiples_of_99 == np.arange(0, 9999+99, 99)))
           """,
           'hidden': False,
           'locked': False

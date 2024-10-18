@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.bool(all(powers_of_2 == 2 ** np.arange(30)))
-          np.True_
+          >>> assert np.bool(all(powers_of_2 == 2 ** np.arange(30)))
           """,
           'hidden': False,
           'locked': False

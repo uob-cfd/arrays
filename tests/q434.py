@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.bool(round(sum_of_bills, 2) == 1795730.06)
-          np.True_
+          >>> assert np.bool(round(sum_of_bills, 2) == 1795730.06)
           """,
           'hidden': False,
           'locked': False
